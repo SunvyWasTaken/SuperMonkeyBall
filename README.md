@@ -1,28 +1,26 @@
-# **SuperMonkeyBall**
+# **Super-monkey Ball
 
 TP Super Monkey Ball
 
 ## **TODO**
 
 > ## **Monde**
-> Est un enssemble de plusieurs level.
+> Est un ensemble de plusieurs levels.
 
 > ## **Level**
-> Tout le level doit être dans un même objet car le joueur controller l'inclinaison du level.
+> Un level est composé de plusieurs plateformes, de checkpoint optionnel et d'un point d'arrivée.
 
 > ## **Timer**
 > Le personnage à 60 secondes pour arriver à la fin du level.
 > 
 > Si le timer arrive à 0 recommencer le level et enlever une vie au personnage.
 
-> ## **Character**
-> Est soumi à la physique et bougera en fonction de l'inclinaison du level.
->
-> Le personnage gagne de l'inertie avec le temps.
+> ## **Personnage**
+> Le personnage est déplacé à l'aide des flèches directionnellesdirectionnel, ZQSD ou le joystick de la manette.
 >
 > Lorsque le personnage tombe trop loin du level recommencer au dernier checkpoint ou au début du level.
 >
-> Si le personnage à 3 vie de base si il les perds toute le monde recommence.
+> Le personnage à 3 vie de base si il les perds toute le monde recommence.
 
 > ## **Checkpoint**
 > Joue une animation quand le personnage rentre en collision.
@@ -39,7 +37,11 @@ TP Super Monkey Ball
 > Joue une animation de fin de level.
 
 > ## **Camera**
-> Suit le personnage et tourne suivant la direction du personnage.
+> Regarde toujours le personnage
+>
+> Tilté la caméra en fonction de la direction du personnage.
+>
+> Récupérer la surface normal de la surface ou le personnage est présent afin de tourner la caméra et ne pas ce retrouver dans le sol.
 
 ## **Pour aller plus loin**
 > ## **Collectible**
@@ -51,3 +53,13 @@ TP Super Monkey Ball
 
 > ## **Menu**
 > Créer un menu de sélection de monde.
+
+> ## **Camera**
+> Faire en sorte de désactivé le déplacement à l'aide de la normal de la surface suivant la surface présente en dessous du personnage. Cela évite certain problême avec l'inclinaison de surface.
+
+> ## **Personnage**
+> Faire en sorte que le joueur rebondisse sur les plateformes un peu plus surélevé.
+>
+> Faire en sorte qu'un character humanoide soit au centre de la sphere du personnage. Celui ci ne doit pas tourner sur lui meme en suivant la boule.
+>
+> Ajouter une animation indiquant quand le joueur est trop proche d'une bordure.
