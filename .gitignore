@@ -75,3 +75,4 @@ DerivedDataCache/*
 
 # Ignore Rider files
 .idea/*
+Plugins/*
